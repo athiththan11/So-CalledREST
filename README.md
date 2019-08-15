@@ -2,6 +2,8 @@
 
 A fake REST API for developers with **Basic Authentication** backed by [JSONPlaceHolder](https://jsonplaceholder.typicode.com/).
 
+**[Deployed on Heroku](https://socalledrest.herokuapp.com/)**
+
 ### Basic Authentication
 
 * username: `carbon`
@@ -9,12 +11,12 @@ A fake REST API for developers with **Basic Authentication** backed by [JSONPlac
 
 ### Resources
 
-* Users
+* [Users](https://jsonplaceholder.typicode.com/users)
 
 ### Routes
 
-* GET       /mock/users
-* GET       /mock/users/1
+* GET [/mock/users](https://socalledrest.herokuapp.com/mock/users) : `http://localhost:8080/mock/users`
+* GET [/mock/users/1](https://socalledrest.herokuapp.com/mock/users/1) : `http://localhost:8080/mock/users/1`
 
 #### Build & Run
 
