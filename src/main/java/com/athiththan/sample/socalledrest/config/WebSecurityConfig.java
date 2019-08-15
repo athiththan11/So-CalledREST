@@ -21,7 +21,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().authorizeRequests().anyRequest().authenticated().and().httpBasic()
+        http.csrf().disable().authorizeRequests().antMatchers("/mock/**").authenticated().and().httpBasic()
                 .authenticationEntryPoint(authEntryPoint).and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().headers().cacheControl();
     }
